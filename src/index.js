@@ -37,7 +37,8 @@ const {express,engine} = native_module;
 
 //Config para casos especificos
 	///Puertos
-	app.set('port_prod',4000);
+	const PORT = process.env.PORT || 3000;
+	app.set('port_prod',PORT);
 	
 	/*archivos estatico*/
 
